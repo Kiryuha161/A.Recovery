@@ -14,18 +14,17 @@ header {
     height: 100%;
 }
 
-p, h1, h2 {
+p, h1, h2, h3 {
     color: white;
 }
 
 .about-company {
-    background-color: rgb(34, 33, 33);
     border-radius: 25px;
     height: auto;
 }
 
 .main-img-block {
-    width: 90%;
+    width: 100%;
     height: auto;
     margin: auto;
 }
@@ -36,19 +35,26 @@ p, h1, h2 {
     border-radius: 25px;
 }
 
-.ivs-type {
-    width: 85%;
+.ivs-main-type {
+    width: 100%;
     background-color: rgb(34, 33, 33);
     padding: 0 30px 0 30px;
     border-radius: 25px;
 }
 
-.ivs-slider {
+.ivs-extra-type {
+    width: 100%;
+    background-color: rgb(34, 33, 33);
+    padding: 0 30px 0 30px;
+    border-radius: 25px;
+}
+
+/* .ivs-slider {
     height: 300px;
     width: 100%;
     overflow: hidden;
     transform: translate(10px, 0);
-}
+} */
 
 .slide-item {
     height: 400px;
@@ -59,8 +65,18 @@ p, h1, h2 {
     height: 100%;
     width: 100%;
     border-radius: 25px;
+    align-items: center;
     position: relative;
-    left: 7px;
+}
+
+.card button {
+    position: absolute;
+    top: 300px;
+}
+
+.card p {
+    position: absolute;
+    top: 150px;
 }
 
 .red-card {
@@ -75,52 +91,48 @@ p, h1, h2 {
     background-color: blue;
 }
 
-.yellow-card {
-    background-color: yellow;
+.purple-card {
+    background-color: rgb(241, 7, 171);
 }
 
-@media screen and (min-width: 1400px) {
-    .slide-item {
-        height: 300px;
-        width: 290px !important;
-    }
+.card-block {
+    height: 400px;
+    margin-bottom: 30px;
 }
 
-@media screen and (max-width: 1399px) and (min-width: 1200px) {
-    .ivs-type {
-        width: 100%;
+@media screen and (min-width: 1200px) {
+    .mobile {
+        display: none;
     }
+
+    .desktop {
+        display: block;
+    }   
+}
+
+@media screen and (max-width: 1200px) {
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }   
 }
 
 @media screen and (max-width: 1199px) and (min-width: 1000px) {
-    .ivs-type {
-        width: 100%;
-    }
-
-    .slide-item {
-        height: 400px;
-        width: 280px !important;
-    }
-}
-
-@media screen and (max-width: 999px) and (min-width: 768px) {
-    .ivs-type {
-        width: 100%;
-    }
-
-    .slide-item {
-        height: 400px;
-        width: 300px !important;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .ivs-type {
-        width: 100%;
-    }
-
     .slide-item {
         height: 400px;
         width: 98% !important;
     }
 }
+
+@media screen and (max-width: 999px) {
+    .slide-item {
+        height: 400px;
+        width: 98% !important;
+    }
+}
+
+
+ 
