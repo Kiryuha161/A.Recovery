@@ -2,6 +2,10 @@ body {
     background-color: black;
 }
 
+body.modal-open {
+    overflow: hidden;
+}
+
 header {
     height: 100px;
 }
@@ -49,13 +53,6 @@ p, h1, h2, h3 {
     border-radius: 25px;
 }
 
-/* .ivs-slider {
-    height: 300px;
-    width: 100%;
-    overflow: hidden;
-    transform: translate(10px, 0);
-} */
-
 .slide-item {
     height: 400px;
     width: 335px !important;
@@ -71,7 +68,7 @@ p, h1, h2, h3 {
 
 .card button {
     position: absolute;
-    top: 300px;
+    top: 350px;
 }
 
 .card p {
@@ -91,6 +88,10 @@ p, h1, h2, h3 {
     background-color: blue;
 }
 
+.grey-card {
+    background-color: rgb(34, 33, 33);   
+}
+
 .purple-card {
     background-color: rgb(241, 7, 171);
 }
@@ -100,6 +101,48 @@ p, h1, h2, h3 {
     margin-bottom: 30px;
 }
 
+.modal {
+    width: 100%;
+}
+
+.modal-content {
+    background-color: green;
+    border-radius: 25px;
+    top: 50px;
+    height: 90%;
+    width: 50%;
+    margin: auto;
+    overflow: auto; 
+}
+
+.modal-content::-webkit-scrollbar {
+    width: 0;
+}
+
+.modal-custom p, .modal-custom h2 {
+    color: rgb(0, 0, 0);
+}
+
+.modal-content img {
+    width: 25px;
+    height: 25px;
+    margin-top: 10px;
+    margin-right: 10px;
+    float: right;
+}
+
+.modal-custom img:hover {
+    cursor: pointer;
+}
+
+.show {
+    display: block !important;
+}
+
+.table-block {
+    width: 80%;
+}
+ 
 @media screen and (min-width: 1200px) {
     .mobile {
         display: none;
@@ -117,13 +160,22 @@ p, h1, h2, h3 {
 
     .mobile {
         display: block;
-    }   
+    }  
+    
+    .modal-content {
+        width: 90%;
+    }
 }
 
 @media screen and (max-width: 1199px) and (min-width: 1000px) {
     .slide-item {
         height: 400px;
         width: 98% !important;
+    }
+
+    .card p {
+        position: absolute;
+        top: 75px;
     }
 }
 
