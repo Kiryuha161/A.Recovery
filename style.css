@@ -1,25 +1,127 @@
-body {
-    background-color: black;
+@font-face {
+    font-family: 'TildaSans'; /* Название шрифта */
+    src: url('./TildaSans.07Web/TildaSans-Regular/TildaSans-Regular.woff') format('woff'),
+         url('./TildaSans.07Web/TildaSans-Regular/TildaSans-Regular.woff2') format('woff2');
 }
 
-body.modal-open {
-    overflow: hidden;
+body {
+    background-color: #1B1930;
+    background-image: url(./icons/1.png), url(./icons/2.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right top, right top;
+    background-attachment: fixed, fixed;
+    background-size: 80vw 80vh;
+    font-family: 'TildaSans';
 }
 
 header {
     height: 100px;
+    position: relative;
 }
 
-.logo {
-    height: 50px;
+footer {
+    position: relative;
 }
 
-.logo-img {
-    height: 100%;
+footer .contacts p{
+    position: absolute;
+    right: 40px;
+    bottom: 0px;
+}
+
+footer .contacts {
+    position: relative;
+}
+
+footer .contacts img {
+    width: 100%;
+}
+
+footer .contacts a {
+    width: 55px;
+    text-decoration: none;
+    color: #9E00FF;
+}
+
+footer .icons {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+footer .contacts .instagram-icon {
+    width: 50px; 
+    position: absolute;
+    right: 130px;
+    bottom: 40px; 
+} 
+
+footer .contacts .telegram-icon {
+    width: 30px; 
+    position: absolute;
+    right: 105px;
+    bottom: 43px; 
+} 
+
+footer .contacts .vkontakte-icon {
+    width: 45px; 
+    position: absolute;
+    right: 60px;
+    bottom: 45px; 
+} 
+
+footer .contacts .whatsapp-icon {
+    width: 50px; 
+    position: absolute;
+    right: 20px;
+    bottom: 35px;
+} 
+
+header a {
+    text-decoration: none;
+    color: #9E00FF;
+}
+
+header .phone p{
+    position: absolute;
+    right: 15px;
 }
 
 p, h1, h2, h3 {
     color: white;
+}
+
+button {
+    border-radius: 25px;
+    padding: 5px 30px;
+    background: linear-gradient(#9E00FF, #BA38FF, #1B1930);
+}
+
+button:hover {
+    background-color: #1B1930;
+    color: white;
+}
+
+thead th{
+    background: linear-gradient(#9E00FF, #BA38FF, #1B1930);
+    color: white !important;
+}
+
+tfoot td {
+    background: linear-gradient(#9E00FF, #BA38FF, #1B1930);
+    color: white !important;
+}
+
+li {
+    color: white;
+}
+
+.logo {
+    height: 100px;
+}
+
+.logo-img {
+    height: 100%;
 }
 
 .about-company {
@@ -35,20 +137,19 @@ p, h1, h2, h3 {
 
 .main-img {
     width: 100%;
-    height: 300px;
+    height: 80%;
+   /*  height: 300px; */
     border-radius: 25px;
 }
 
 .ivs-main-type {
     width: 100%;
-    background-color: rgb(34, 33, 33);
     padding: 0 30px 0 30px;
     border-radius: 25px;
 }
 
 .ivs-extra-type {
     width: 100%;
-    background-color: rgb(34, 33, 33);
     padding: 0 30px 0 30px;
     border-radius: 25px;
 }
@@ -68,12 +169,16 @@ p, h1, h2, h3 {
 
 .card button {
     position: absolute;
-    top: 350px;
+    top: 330px;
 }
 
 .card p {
     position: absolute;
-    top: 150px;
+    top: 120px;
+}
+
+.card h3 {
+    margin-top: 30px;
 }
 
 .red-card {
@@ -93,7 +198,8 @@ p, h1, h2, h3 {
 }
 
 .purple-card {
-    background-color: rgb(241, 7, 171);
+    background: linear-gradient(#BA38FF, #9E00FF, #1B1930); 
+    /* --bs-card-border-width: none; */
 }
 
 .card-block {
@@ -101,12 +207,14 @@ p, h1, h2, h3 {
     margin-bottom: 30px;
 }
 
-.modal {
-    width: 100%;
-}
-
 .modal-content {
-    background-color: green;
+    /*background-color: #1B1930;
+    background-image: url(./icons/1.png), url(./icons/2.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right top, right top;
+    background-attachment: fixed, fixed;
+    background-size: 80vw 80vh;*/
+    background-color: #1B1930;
     border-radius: 25px;
     top: 50px;
     height: 90%;
@@ -119,19 +227,23 @@ p, h1, h2, h3 {
     width: 0;
 }
 
-.modal-custom p, .modal-custom h2 {
-    color: rgb(0, 0, 0);
+.modal-content p, .modal-content h2 {
+    color: white;
+}
+
+.modal-content h2 {
+    float: left;
+    margin-top: 30px;
 }
 
 .modal-content img {
     width: 25px;
     height: 25px;
     margin-top: 10px;
-    margin-right: 10px;
     float: right;
 }
 
-.modal-custom img:hover {
+.modal-content img:hover {
     cursor: pointer;
 }
 
@@ -141,6 +253,10 @@ p, h1, h2, h3 {
 
 .table-block {
     width: 80%;
+}
+
+.logo-footer {
+    height: 100px;
 }
  
 @media screen and (min-width: 1200px) {
