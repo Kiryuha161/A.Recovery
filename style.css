@@ -1,7 +1,8 @@
 @font-face {
-    font-family: 'TildaSans'; /* Название шрифта */
+    font-family: 'TildaSans';
+    /* Название шрифта */
     src: url('./TildaSans.07Web/TildaSans-Regular/TildaSans-Regular.woff') format('woff'),
-         url('./TildaSans.07Web/TildaSans-Regular/TildaSans-Regular.woff2') format('woff2');
+        url('./TildaSans.07Web/TildaSans-Regular/TildaSans-Regular.woff2') format('woff2');
 }
 
 body {
@@ -23,7 +24,7 @@ footer {
     position: relative;
 }
 
-footer .contacts p{
+footer .contacts p {
     position: absolute;
     right: 40px;
     bottom: 0px;
@@ -50,51 +51,80 @@ footer .icons {
 }
 
 footer .contacts .instagram-icon {
-    width: 50px; 
+    width: 50px;
     position: absolute;
     right: 130px;
-    bottom: 40px; 
-} 
+    bottom: 40px;
+}
 
 footer .contacts .telegram-icon {
-    width: 30px; 
+    width: 30px;
     position: absolute;
     right: 105px;
-    bottom: 43px; 
-} 
+    bottom: 43px;
+}
 
 footer .contacts .vkontakte-icon {
-    width: 45px; 
+    width: 45px;
     position: absolute;
     right: 60px;
-    bottom: 45px; 
-} 
+    bottom: 45px;
+}
 
 footer .contacts .whatsapp-icon {
-    width: 50px; 
+    width: 50px;
     position: absolute;
     right: 20px;
     bottom: 35px;
-} 
+}
 
 header a {
     text-decoration: none;
     color: #9E00FF;
 }
 
-header .phone p{
+header .phone p {
     position: absolute;
     right: 15px;
 }
 
-p, h1, h2, h3 {
+p,
+h1,
+h2,
+h3 {
     color: white;
 }
 
 button {
     border-radius: 25px;
     padding: 5px 30px;
-    background: linear-gradient(#9E00FF, #BA38FF, #1B1930);
+    background-color: rgba(34, 33, 33, 0);
+    border: 1px solid white;
+    color: white;
+    width: 75%;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 500px) {
+    button {
+        width: 50%;
+        font-size: 14px;
+    }
+
+    .card p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 485px) {
+    button {
+        width: 80%;
+        font-size: 12px;
+    }
+
+    .card p {
+        font-size: 12px;
+    }
 }
 
 button:hover {
@@ -102,13 +132,23 @@ button:hover {
     color: white;
 }
 
-thead th{
-    background: linear-gradient(#9E00FF, #BA38FF, #1B1930);
+table {
+    border-radius: 25px;
+    border: 1px solid #000;
+    display: block;
+    overflow: hidden;
+    border-top: 0;
+    border-top: 0;
+}
+
+thead th {
+    background: linear-gradient(#9E00FF, #BA38FF);
     color: white !important;
+    font-weight: 400;
 }
 
 tfoot td {
-    background: linear-gradient(#9E00FF, #BA38FF, #1B1930);
+    background: linear-gradient(#9E00FF, #BA38FF);
     color: white !important;
 }
 
@@ -126,7 +166,27 @@ li {
 
 .about-company {
     border-radius: 25px;
-    height: auto;
+    /* height: 100vh; */
+}
+
+.about-company ul {
+    padding: 0;
+    margin-left: 0;
+    list-style-position: inside;
+}
+
+@media screen and (max-width: 1200px) {
+    .about-company {
+        margin-top: -50px !important;
+    }
+    
+    .about-company p {
+        font-size: 14px;
+    }
+
+    .about-company li {
+        font-size: 14px;
+    }
 }
 
 .main-img-block {
@@ -136,10 +196,30 @@ li {
 }
 
 .main-img {
-    width: 100%;
-    height: 80%;
-   /*  height: 300px; */
+    width: 60%;
+    height: 55%;
+    /*  height: 300px; */
     border-radius: 25px;
+    position: absolute;
+    left: 0;
+}
+
+@media screen and (max-width: 1200px) {
+    .main-img {
+        width: 60%;
+        height: 60%;
+        position: absolute;
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .main-img {
+        width: 120%;
+        margin-top: 80px !important;
+        height: 50%;
+        opacity: 0.3;
+    }
 }
 
 .ivs-main-type {
@@ -194,11 +274,11 @@ li {
 }
 
 .grey-card {
-    background-color: rgb(34, 33, 33);   
+    background-color: rgb(34, 33, 33);
 }
 
 .purple-card {
-    background: linear-gradient(#BA38FF, #9E00FF, #1B1930); 
+    background: linear-gradient(#BA38FF, #9E00FF, #1B1930);
     /* --bs-card-border-width: none; */
 }
 
@@ -220,14 +300,15 @@ li {
     height: 90%;
     width: 50%;
     margin: auto;
-    overflow: auto; 
+    overflow: auto;
 }
 
 .modal-content::-webkit-scrollbar {
     width: 0;
 }
 
-.modal-content p, .modal-content h2 {
+.modal-content p,
+.modal-content h2 {
     color: white;
 }
 
@@ -247,6 +328,10 @@ li {
     cursor: pointer;
 }
 
+.mini-modal {
+    height: 700px !important;
+}
+
 .show {
     display: block !important;
 }
@@ -255,10 +340,93 @@ li {
     width: 80%;
 }
 
+@media screen and (max-width: 768px) {
+    .modal-content {
+        width: 100% !important;
+    }
+
+    .table-block {
+        width: 100% !important;
+    }
+} 
+
+.around-table {
+    background-color: white;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 25px;
+    margin-top: 20px;
+}
+
+.mini-ivs-background {
+    background-color: white;
+    border-radius: 25px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.mini-ivs-background p {
+    color: black;
+    padding: 15px;
+}
+
+.cinderella {
+    height: 115%;
+}
+
+.cinderella p {
+    padding: 5px !important;
+}
+
+.cinderella li {
+    color: black;
+}
+
+.cinderella .into-ivs-background {
+    height: 100%;
+}
+
+.cinderella .structure {
+    bottom: 25px;
+}
+
+.into-ivs-background {
+    border: 1px solid #C8C8C8;
+    border-radius: 25px;
+    width: 95%;
+    height: 300px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.structure {
+    color: grey !important;
+    position: absolute;
+    bottom: 40px;
+}
+
+.cost {
+    background: linear-gradient(#9E00FF, #BA38FF);
+    position: absolute;
+    bottom: -16px;
+    width: 100%;
+}
+
+.image-table {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.mini-modal-info {
+    border: 1px solid black;
+}
+
 .logo-footer {
     height: 100px;
 }
- 
+
 @media screen and (min-width: 1200px) {
     .mobile {
         display: none;
@@ -266,7 +434,7 @@ li {
 
     .desktop {
         display: block;
-    }   
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -276,8 +444,8 @@ li {
 
     .mobile {
         display: block;
-    }  
-    
+    }
+
     .modal-content {
         width: 90%;
     }
@@ -301,6 +469,3 @@ li {
         width: 98% !important;
     }
 }
-
-
- 
