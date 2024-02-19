@@ -319,7 +319,7 @@ li {
     border-radius: 25px;
     top: 50px;
     height: 90%;
-    width: 50%;
+    width: 100% !important;
     margin: auto;
     overflow: auto;
 }
@@ -350,7 +350,7 @@ li {
 }
 
 .mini-modal {
-    height: 700px !important;
+    height: 1000px !important;
 }
 
 .show {
@@ -362,9 +362,9 @@ li {
 }
 
 @media screen and (max-width: 768px) {
-    .modal-content {
+    /* .modal-content {
         width: 100% !important;
-    }
+    } */
 
     .table-block {
         width: 100% !important;
@@ -389,11 +389,11 @@ li {
 
 .mini-ivs-background p {
     color: black;
-    padding: 15px;
+    padding: 15px 15px 0 15px;
 }
 
 .cinderella {
-    height: 115%;
+    height: 120%;
 }
 
 .cinderella p {
@@ -416,7 +416,7 @@ li {
     border: 1px solid #C8C8C8;
     border-radius: 25px;
     width: 95%;
-    height: 300px;
+    height: 200px;
     margin: auto;
     position: relative;
     overflow: hidden;
