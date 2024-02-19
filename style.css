@@ -53,14 +53,16 @@ footer .icons {
 footer .contacts .instagram-icon {
     width: 50px;
     position: absolute;
-    right: 130px;
+    /* right: 130px; */
+    right: 105px;
     bottom: 40px;
 }
 
 footer .contacts .telegram-icon {
     width: 30px;
     position: absolute;
-    right: 105px;
+    /* right: 105px; */
+    right: 80px;
     bottom: 43px;
 }
 
@@ -74,7 +76,8 @@ footer .contacts .vkontakte-icon {
 footer .contacts .whatsapp-icon {
     width: 50px;
     position: absolute;
-    right: 20px;
+    /* right: 20px; */
+    right: 35px;
     bottom: 35px;
 }
 
