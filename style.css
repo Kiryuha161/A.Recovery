@@ -179,7 +179,7 @@ li {
     .about-company {
         margin-top: -50px !important;
     }
-    
+
     .about-company p {
         font-size: 14px;
     }
@@ -232,6 +232,10 @@ li {
     width: 100%;
     padding: 0 30px 0 30px;
     border-radius: 25px;
+}
+
+.main-multiple-items {
+    width: 100%;
 }
 
 .slide-item {
@@ -348,7 +352,7 @@ li {
     .table-block {
         width: 100% !important;
     }
-} 
+}
 
 .around-table {
     background-color: white;

@@ -5,7 +5,7 @@ $(document).ready(function () {
         slidesToShow: 3,
         dots: true,
         slidesToScroll: 1,
-        centerMode: true,
+        /* centerMode: true, */
         responsive: [
             {
                 breakpoint: 1200,
@@ -32,7 +32,7 @@ $(document).ready(function () {
         slidesToShow: 3,
         dots: true,
         slidesToScroll: 1,
-        centerMode: true,
+        /* centerMode: true, */
         responsive: [
             {
                 breakpoint: 1200,
