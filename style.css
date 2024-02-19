@@ -215,7 +215,7 @@ li {
 
 @media screen and (max-width: 991px) {
     .main-img {
-        width: 120%;
+        width: 100%;
         margin-top: 80px !important;
         height: 50%;
         opacity: 0.3;
@@ -289,6 +289,12 @@ li {
 .card-block {
     height: 400px;
     margin-bottom: 30px;
+}
+
+@media screen and (max-width: 991px) {
+    .reviews p {
+        font-size: 12px;
+    }
 }
 
 .modal-content {
