@@ -302,7 +302,44 @@ li {
     margin-bottom: 30px;
 }
 
+.reviews {
+    height: 700px;
+}
+
+.reviews .card {
+    height: 600px;
+}
+
+.reviews .card p {
+    position: static;
+    padding-top: 20px;
+}
+
+.avatar {
+    width: 100%;
+    height: 50%;
+}
+
+@media screen and (max-width: 1200px) {
+    .reviews .card p {
+        font-size: 15px !important;
+    }
+}
+
 @media screen and (max-width: 991px) {
+    .card-block {
+        height: 400px;
+        margin-bottom: 150px;
+    }
+   
+    .reviews {
+        height: 1700px;
+    }
+
+    .reviews .card {
+        height: 500px;
+    }
+    
     .reviews .card p {
         font-size: 16px !important;
     }
