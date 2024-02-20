@@ -316,8 +316,10 @@ li {
 }
 
 .avatar {
-    width: 30%;
-    height: 23%;
+    /* width: 30%;
+    height: 23%; */
+    width: 100px;
+    height: 100px;
     padding-top: 20px;
 }
 
@@ -335,8 +337,8 @@ li {
     }
 
     .avatar {
-        width: 40%;
-        height: 27%;
+        width: 110px;
+        height: 110px;
         padding-top: 20px;
     }
 }
@@ -360,8 +362,8 @@ li {
     }
 
     .avatar {
-        width: 25%;
-        height: 40%;
+        width: 120px;
+        height: 155px;
         padding-top: 40px;
     }
 }
