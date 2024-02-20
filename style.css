@@ -349,8 +349,7 @@ li {
     background-color: #1B1930;
     border-radius: 25px;
     top: 0;
-    /* height: 100%; */
-    min-width: 100vh;
+    height: 100%;
     width: 100% !important;
     margin: auto;
     overflow: auto;
