@@ -346,20 +346,13 @@ li {
 }
 
 .modal-content {
-    /*background-color: #1B1930;
-    background-image: url(./icons/1.png), url(./icons/2.png);
-    background-repeat: no-repeat, no-repeat;
-    background-position: right top, right top;
-    background-attachment: fixed, fixed;
-    background-size: 80vw 80vh;*/
     background-color: #1B1930;
     border-radius: 25px;
     top: 0;
     height: 100%;
     width: 100% !important;
     margin: auto;
-    overflow: auto;
-    min-height: 100vh;
+    overflow: hidden;
 }
 
 .modal-content::-webkit-scrollbar {
