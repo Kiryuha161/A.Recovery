@@ -393,7 +393,7 @@ li {
 }
 
 .cinderella {
-    height: 120%;
+    height: 110%;
 }
 
 .cinderella p {
@@ -408,8 +408,24 @@ li {
     height: 100%;
 }
 
-.cinderella .structure {
+/* .cinderella .structure {
     bottom: 25px;
+} */
+
+.iron-standart {
+    height: 120% !important;
+}
+
+.iron-standart .into-ivs-background {
+    height: 100% !important;
+}
+
+.iron-premium {
+    height: 120% !important;
+}
+
+.iron-premium .into-ivs-background {
+    height: 100% !important;
 }
 
 .into-ivs-background {
@@ -424,8 +440,8 @@ li {
 
 .structure {
     color: grey !important;
-    position: absolute;
-    bottom: 40px;
+   /*  position: absolute;
+    bottom: 10px; */
 }
 
 .cost {
