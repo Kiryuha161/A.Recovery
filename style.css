@@ -322,6 +322,7 @@ li {
     width: 100% !important;
     margin: auto;
     overflow: auto;
+    min-height: 100vh;
 }
 
 .modal-content::-webkit-scrollbar {
@@ -453,7 +454,7 @@ li {
 
 .image-table {
     width: 100% !important;
-    height: 100% !important;
+    height: 100vh !important;
 }
 
 .mini-modal-info {
@@ -481,10 +482,6 @@ li {
 
     .mobile {
         display: block;
-    }
-
-    .modal-content {
-        width: 90%;
     }
 }
 
